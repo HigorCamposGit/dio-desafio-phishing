@@ -18,18 +18,18 @@ Desafio de projeto sobre Engenharia Social e Phishing no Kali Linux - DIO.
 ## Configurando o Phishing no Kali Linux
 ## Dentro do terminal do Kali Linux.
 
- * Acesso root: sudo su
- * Iniciando o setoolkit: setoolkit
- * Tipo de ataque: Social-Engineering Attacks
- * Vetor de ataque: Web Site Attack Vectors
- * Método de ataque: Credential Harvester Attack Method
- * Método de ataque: Site Cloner
- * Obtendo o endereço da máquina: ifconfig
- * URL para clone: http://www.facebook.com
+1. 🔑 **Acesso Root:** `sudo su`
+2. 🚀 **Iniciando a Ferramenta:** `setoolkit`
+3. 🎯 **Tipo de Ataque:** `Social-Engineering Attacks`
+4. 🌐 **Vetor de Ataque:** `Web Site Attack Vectors`
+5. 🕵️ **Método de Ataque:** `Credential Harvester Attack Method`
+6. 👥 **Estratégia de Clonagem:** `Site Cloner`
+7. 🌐 **Obtendo o IP da Máquina:** `ifconfig`
+8. 🔗 **URL de Origem para Clone:** `http://www.facebook.com`
 
 =================================================================
 
-## Resultados
+## 📊 Resultados e Evidências
 * Como explicado eu não tenho espaço na maquina para realizar o teste mas em aula o resultado que aparece 
 * Dentro do prompt é similar a explicação abaixo:
 
@@ -50,17 +50,17 @@ Desafio de projeto sobre Engenharia Social e Phishing no Kali Linux - DIO.
 * PARAM: prefill_type=
 * PARAM: first_prefill_source=
 
-🔍 Explicação Técnica dos Parâmetros (PARAM):
-POSSIBLE USERNAME / PASSWORD FIELD FOUND: Destaque feito pelo setoolkit ao identificar o nome de usuário (e-mail/telefone) e a senha digitados pela vítima na página clonada.
+🔍 Análise Técnica dos Parâmetros (PARAM)
+🔑 POSSIBLE USERNAME / PASSWORD FIELD FOUND: Destaque automático do setoolkit ao interceptar o login e a senha inseridos na página clonada.
 
-signed_next: Parâmetro do Facebook que armazena a URL de destino para onde o usuário deve ser redirecionado após o login.
+🔄 signed_next: Parâmetro que armazena a URL de destino para onde a vítima é redirecionada após submeter o formulário.
 
-trynum: Contador que indica o número de tentativas de login efetuadas naquela sessão (ex: 1 para a primeira tentativa).
+🔢 trynum: Contador de tentativas de login efetuadas na mesma sessão (ex: 1 = primeira tentativa).
 
-timezone: Deslocamento do fuso horário do navegador da vítima em minutos em relação ao UTC (ex: 180 minutos = UTC-3, horário oficial de Brasília).
+🌐 timezone: Fuso horário do navegador da vítima em minutos em relação ao UTC (180 min = UTC-3, horário oficial de Brasília).
 
-lgndim: String codificada em Base64 com informações de telemetria do navegador, como resolução de tela e dimensões da janela.
+💻 lgndim: String em Base64 contendo telemetria da tela e do navegador da vítima (resolução, dimensão de janelas).
 
-lgnrnd e lgnjs: Tokens e timestamps em JavaScript gerados pela aplicação original para controle de sessão e prevenção de bots.
+🛡️ lgnrnd / lgnjs: Tokens de segurança e controle de sessão gerados pelo JavaScript da página original para prevenção contra automações/bots.
 
-prefill_contact_point / prefill_source / prefill_type / first_prefill_source: Parâmetros de rastreamento do Facebook utilizados para identificar a origem do preenchimento automático do formulário de login.
+📌 prefill_*: Parâmetros de rastreamento nativos do Facebook para origens de preenchimento automático.
