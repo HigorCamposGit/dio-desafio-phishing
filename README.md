@@ -58,9 +58,9 @@ Desafio de projeto sobre Engenharia Social e Phishing no Kali Linux - DIO.
 🔢 trynum: Contador de tentativas de login efetuadas na mesma sessão (ex: 1 = primeira tentativa).
 
 🌐 timezone: Fuso horário do navegador da vítima em minutos em relação ao UTC (180 min = UTC-3, horário oficial de Brasília).
-========
-🤝 Conecte-se Comigo.
-⚠️ Aviso Legal (Disclaimer): Este projeto possui finalidade estritamente didática. O uso de técnicas de Engenharia Social sem autorização prévia contra alvos reais é ilegal.
+
+*🤝 Conecte-se Comigo.
+*⚠️ Aviso Legal (Disclaimer): Este projeto possui finalidade estritamente didática. O uso de técnicas de Engenharia Social sem autorização prévia contra alvos reais é ilegal.
 
 💻 lgndim: String em Base64 contendo telemetria da tela e do navegador da vítima (resolução, dimensão de janelas).
 
