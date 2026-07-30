@@ -30,25 +30,25 @@ Desafio de projeto sobre Engenharia Social e Phishing no Kali Linux - DIO.
 =================================================================
 
 ## Resultados
-## Como explicado eu não tenho espaço na maquina para realizar o teste mas em aula o resultado que aparece 
+* Como explicado eu não tenho espaço na maquina para realizar o teste mas em aula o resultado que aparece 
 * Dentro do prompt é similar a explicação abaixo:
 
 ### Output capturado no terminal do 'setoolkit' após a submissão do formulário na página clonada:
 
 
-[***] POSSIBLE USERNAME FIELD FOUND: fulano@servico.com
-[***] POSSIBLE PASSWORD FIELD FOUND: SenhaExemplo123
+* POSSIBLE USERNAME FIELD FOUND: fulano@servico.com
+* POSSIBLE PASSWORD FIELD FOUND: SenhaExemplo123
 
-PARAM: signed_next=
-PARAM: trynum=1
-PARAM: timezone=180
-PARAM: lgndim=eyJjI...
-PARAM: lgnrnd=112556_dsDS
-PARAM: lgnjs=1668021982
-PARAM: prefill_contact_point=
-PARAM: prefill_source=
-PARAM: prefill_type=
-PARAM: first_prefill_source=
+* PARAM: signed_next=
+* PARAM: trynum=1
+* PARAM: timezone=180
+* PARAM: lgndim=eyJjI...
+* PARAM: lgnrnd=112556_dsDS
+* PARAM: lgnjs=1668021982
+* PARAM: prefill_contact_point=
+* PARAM: prefill_source=
+* PARAM: prefill_type=
+* PARAM: first_prefill_source=
 
 🔍 Explicação Técnica dos Parâmetros (PARAM):
 POSSIBLE USERNAME / PASSWORD FIELD FOUND: Destaque feito pelo setoolkit ao identificar o nome de usuário (e-mail/telefone) e a senha digitados pela vítima na página clonada.
