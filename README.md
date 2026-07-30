@@ -31,7 +31,7 @@ Desafio de projeto sobre Engenharia Social e Phishing no Kali Linux - DIO.
 
 ## Resultados
 ## Como explicado eu não tenho espaço na maquina para realizar o teste mas em aula o resultado que aparece 
-no prompt é similar a explicação abaixo:
+* Dentro do prompt é similar a explicação abaixo:
 
 ### Output capturado no terminal do 'setoolkit' após a submissão do formulário na página clonada:
 
